@@ -3,7 +3,9 @@ import os, sys
 
 
 def img_file_extension(filename):
-    ext = os.path.splitext(filename)[1].decode('utf-8')
+    ext = os.path.splitext(filename)[1]
+    if not isinstance(ext, str):
+        ext = ext.decode('utf-8')
     return ext.lower() in { '.jpg', '.jpeg', '.png' }
 
 

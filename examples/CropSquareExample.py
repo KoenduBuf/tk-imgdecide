@@ -1,10 +1,11 @@
+#!/usr/bin/env python3
 
-from PIL import ImageDraw, ImageEnhance
+from PIL import ImageEnhance
 from imgdecide import *
 import os
 
 crop_to_size       = 512                                # How big to make the images
-images_from_folder = "originals"                        # Where the images are
+images_from_folder = "path/to/originals"                # Where the images are
 images_to_folder   = f"{crop_to_size}x{crop_to_size}"   # Where to store the cropped ones
 
 
